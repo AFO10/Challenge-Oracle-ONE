@@ -1,0 +1,223 @@
+* {
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+}
+
+:root {
+	--bg-color: 
+				linear-gradient(217deg, #313c4b, rgba(0, 0, 0, 0) 70.71%), 
+				linear-gradient(336deg, #1F2F3D, rgba(0, 0, 0, 0) 70.71%),
+				linear-gradient(127deg, #34495E, rgba(0, 0, 0, 0) 70.71%);
+	--altura-nav-elementos : 5rem;
+	--margin-nav-elementos : 10rem;
+}
+
+
+body {
+	background: var(--bg-color);
+	margin: 0 auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.div-header {
+	height: var(--altura-nav-elementos);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logoGithub {
+	float: right;
+	height: var(--altura-nav-elementos);
+	margin-right: var(--margin-nav-elementos);
+}
+
+.logoOne {
+	float: left;
+	height: var(--altura-nav-elementos);
+	margin-left: var(--margin-nav-elementos);
+}
+
+#aviso{
+	margin: 1rem;
+	color: #d8dff7;
+	font-weight: bold;
+}
+
+i{
+	color: #747fa3;
+}
+
+.container {
+	display: flex;
+	margin: 1rem auto;
+	align-items: center;
+	flex-direction: column;
+}
+
+.txt-wrapper {
+	display: block;
+	margin: 1rem auto 6rem;
+	text-align: center;
+
+}
+
+.pairOfBtns {
+	display: flex;
+}
+
+section div textarea {
+	border: none;
+	width: 21rem;
+	padding: 2rem;
+	height: 21rem;
+	margin: 0 1rem;
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.2rem;
+	border-radius: 2rem;
+	resize: none;
+}
+
+textarea:hover,
+textarea:focus {
+	outline: none;
+	border-color: #7eb2e9;
+	box-shadow: 0 0 1rem #719ECE;
+}
+
+a img,
+.btnclss {
+	cursor: pointer;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+ 
+a img{
+	transform: scale(0.5);
+
+}
+
+a img:hover {
+	transform: scale(0.8);
+}
+
+.btnclss:hover{
+	transform: scale(1.2);
+
+}
+
+.paraDesencriptar {
+	background-color: rgb(176, 176, 194);
+	border: solid 3px rgb(255, 255, 255);
+}
+
+.paraEncriptar{
+	background-color: rgb(176, 176, 194);
+	border: solid 3px rgb(255, 255, 255);
+
+}
+
+.btnclss {
+	width: 10rem;
+	height: 3rem;
+	margin: 1rem;
+	border: none;
+	color: #747fa3;
+	font-size: 1.2rem;
+	font-weight: bold;
+	border-radius: 2rem;
+	background-color: white;
+	border: solid 3px white;
+	user-select: none;
+}
+
+.btnclss:hover, .btnclss:focus {
+	outline: none;
+	cursor: pointer;
+	border-color: #7eb2e9;
+	box-shadow: 0 0 1rem #719ECE;
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+.botoes {
+	display: flex;
+	display: flex;
+	margin: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.toCopy {
+	display: none;
+}
+
+footer {
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3c4870;
+	position: relative;
+	top: 10%;
+}
+
+.txt-container {
+	text-align: center;
+}
+
+.txt-container p {
+	font-size: .8rem;
+	color: whitesmoke;
+}
+
+a {
+	color: inherit;
+}
+
+@media only screen and (max-width: 873px) {
+
+	.btnclss,
+	.btnclss:hover,
+	.btnclss:active,
+	.btnclss:focus {
+		animation: none;
+		transition: none;
+		transform: none;
+	}
+
+	.logoGithub {
+		display: none;
+	}
+
+	.logoOne {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.btnclss {
+		width: 8rem;
+		height: 2.5rem;
+		font-size: 1rem;
+	}
+
+	section div textarea {
+		width: 60%;
+		height: 8rem;
+		margin-bottom: 1rem;
+	}
+
+	.toCopy {
+		display: none;
+	}
+
+	@media only screen and (max-width: 593px) {
+
+		.logoGithub {
+			display: none;
+		}
+	}
+}
